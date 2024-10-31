@@ -13,17 +13,23 @@ export const Container = styled.main`
 `
 
 export const Wrapper = styled.div`
-    max-width: 300px;
+    max-width: 400px;
 `
 
 export const Column = styled.div`
     flex: 1;
+    max-width: 50%;
+    padding: 10px 50px 0px 10px;
+`
+
+export const Column2 = styled.div`
+    flex: 1;
+     max-width: 90%;
 `
 
 export const Row = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 `
@@ -61,17 +67,17 @@ export const SubtitleLogin = styled.p`
 `
 
 
-export const EsqueciText  = styled.p`
+export const EsqueciText  = styled.span`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
 
-    color: #E5E044;
+    color: #FFFFFF;
 ` 
 
-export const CriarText =  styled.p`
+export const CriarText =  styled.span`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;

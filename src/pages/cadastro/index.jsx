@@ -8,7 +8,7 @@ import { api } from '../../services/api';
 import { useForm } from "react-hook-form";
 
 
-import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper } from './styles';
+import { Container, Title, Column, Column2, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper } from './styles';
 
 const Cadastro = () => {
 
@@ -47,7 +47,7 @@ const Cadastro = () => {
                 <Title>A plataforma para você aprender com experts, dominar as principais tecnologias
                  e entrar mais rápido nas empresas mais desejadas.</Title>
             </Column>
-            <Column>
+            <Column2>
                 <Wrapper>
                 <TitleLogin>Comece agora grátis</TitleLogin>
                 <SubtitleLogin>Crie sua conta e make the change._</SubtitleLogin>
@@ -61,13 +61,16 @@ const Cadastro = () => {
                     <Button title="Entrar" variant="secondary" type="submit"/>
                 </form>
                 <Row>
-                    
-                    <SubtitleLogin>Ao clicar em "Criar minha conta", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO</SubtitleLogin>
-                    <CriarText onClick={handleClickSignIn}>Fazer Login</CriarText>
-
+                    <Wrapper>
+                        <SubtitleLogin>Ao clicar em "Criar minha conta", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO</SubtitleLogin>
+                        <Row>
+                            <EsqueciText>Já tenho conta. </EsqueciText>
+                            <CriarText onClick={handleClickSignIn}>Fazer Login</CriarText>
+                        </Row>
+                    </Wrapper>
                 </Row>
                 </Wrapper>
-            </Column>
+            </Column2>
         </Container>
     </>)
 }
